@@ -71,7 +71,7 @@ class homepage extends StatelessWidget {
                               ),
                               Image.network("${value.weatherdata!.iconState}"),
                               Text(
-                                "30°C",
+                                "${value.weatherdata!.temp}",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 25),
                               ),
