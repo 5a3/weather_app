@@ -1,6 +1,7 @@
 # weather_app
 
-A new Flutter project.
+The Weather App is a Flutter-based application that allows users to input a location name to get real-time weather information. The app provides details such as temperature, humidity, wind speed, and weather conditions. It features a simple and user-friendly interface.
+
 
 ## Getting Started
 
