@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:weather_app/cubit/weatherstate_cubit.dart';
 import 'package:weather_app/pages/home_view.dart';
 import 'package:provider/provider.dart';
 import 'package:weather_app/providers/weather_class_provider.dart';
+import 'package:weather_app/services/weather_service.dart';
+import 'package:weather_app/widgets/no_weather_body.dart';
 
 void main() {
-  runApp(ChangeNotifierProvider<weather_class_provider>(
-    create: (context) => weather_class_provider(),
+  runApp(BlocProvider<WeatherstateCubit>(
+    create: (context) => WeatherstateCubit(WeatherService()),
     // builder: (context, child) => Container(),
     child: WeatherApp(),
   ));

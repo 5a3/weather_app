@@ -18,7 +18,7 @@ class NoWeatherBody extends StatelessWidget {
             Container(
               margin: EdgeInsets.only(left: 30),
               child: Text(
-                'لا توجد هناك بيانات الرجاء البحث عن منطقة او قم بتشغيل الانترنت ةوأبدا',
+                'لا توجد هناك بيانات الرجاء البحث عن منطقة او قم بتشغيل الانترنت وأبدا',
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
             ),
